@@ -5,6 +5,11 @@
 
 ## [914. 卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)
 
+解题思路：
+
+将所有 值 与 对应的个数 存入对象内，后取最大公约数
+
+
 ```js
 /**
  * @param {number[]} deck
@@ -40,8 +45,10 @@ console.log( hasGroupsSizeX( [1,2,3,4,4,3,2,1,4,3,2,1] ) )
 ```js
 /**
  * 递归
- * x --- 较小的值
- * y --- 较大的值
+ * x, y 的顺序无关大小
+ * 3 % 9 ----- 3    3 % 3 ----- 0
+ * 9 % 3 ----- 0
+ * 故：无关大小，结果都是一样的  ---  可能会多做几次运算
  */
 function gcb( x, y ){
     return x === 0 ? y : gcb( y % x, x )
