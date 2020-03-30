@@ -11,6 +11,13 @@
 3. 判断环  ----  快慢指针
 4. 对称翻转
 
+**链表常用技巧**
+
+1. 递归
+2. 定义双变量 `let head = p = {}; p.next = l1` 这类定义法则
+
+
+
 
 ### 广度遍历
 
@@ -27,11 +34,22 @@
 
 
 
+## 总结注意点：
+
+1. 递归时，需要注意结束条件
+
+
 ## 每日一题
 
 20.3.29  ---  [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
 
 20.3.28  ---  [820. 单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)
+
+20.3.30  ---  [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/submissions/)
+
+20.3.31  ---  [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
+
+
 
 
 
